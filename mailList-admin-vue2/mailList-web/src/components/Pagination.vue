@@ -56,16 +56,7 @@ export default {
     }
   },
   methods: {
-    //  修改每页条数
-    handleSizeChange(val){
-      this.size = val
-      this.$emit('get-list')
-    },
-    //  修改当前页码
-    handleCurrentChange(val){
-      this.currentPage = val
-      this.$emit('get-list')
-    }
+
   }
 }
 </script>
