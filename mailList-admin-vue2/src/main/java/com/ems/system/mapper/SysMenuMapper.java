@@ -32,7 +32,7 @@ public interface SysMenuMapper extends BaseMapper<SysMenu> {
     * @Author: starao
     * @Date: 2021/11/27
     */
-    List<String> getMenuUrlByRole();
+    List<String> getMenuUrlByRole(@Param("roles") List<String> roles);
 
     /**
     * @Description: 获取权限列表
