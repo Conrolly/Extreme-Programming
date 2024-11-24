@@ -3,6 +3,7 @@
     <template v-for="(menu, menuIndex) in this.menuData">
       <el-submenu :key="menuIndex" :index="menu.name" v-if="menu.children">
         <template slot="title">
+
           <i :class="menu.icon"></i>
           <span slot="title">{{menu.name}}</span>
         </template>
@@ -35,6 +36,10 @@ export default {
   }
 }
 </script>
+
+
+
+
 
 <style scoped>
 .el-menu{
